@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blood Bank Management System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="homecss.css" />
+  </head>
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation Bar -->
+    <nav class="bg-red-700 p-2 mt-0 w-full">
+      <div class="container mx-auto flex flex-wrap items-center">
+        <div
+          class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold"
+        >
+          <a
+            class="text-white no-underline hover:text-white hover:no-underline"
+            href="#"
+          >
+            <span class="text-2xl pl-2">Blood Bank Management System</span>
+          </a>
+        </div>
+        <div class="flex w-full md:w-1/2 justify-center md:justify-end">
+          <ul
+            class="list-reset flex justify-between flex-1 md:flex-none items-center"
+          >
+            <li class="flex-1 md:flex-none md:mr-3">
+              <a
+                class="inline-block py-2 px-4 text-white font-bold no-underline"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+  
+            <li class="flex-1 md:flex-none md:mr-3">
+              <a
+                class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="AdminLogin.php"
+                >ADMIN</a
+              >
+            </li>
+            <li class="flex-1 md:flex-none md:mr-3">
+              <a
+                class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="index.html#learn"
+                >LEARN</a
+              >
+            </li>
+            <li class="flex-1 md:flex-none md:mr-3">
+              <a
+                class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="contact.php"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-red-700">
+      <div class="container mx-auto py-12 px-6 md:px-0">
+        <div class="p-2 md:flex md:items-center md:justify-between">
+          <div class="md:w-1/2">
+            <h2 class="text-4xl text-white font-bold leading-tight mb-4">
+              Donate Blood and Save Lives
+            </h2>
+            <p class="text-xl text-white mb-4">
+              We provide a safe and reliable blood supply to those who need it
+              most.
+            </p>
+            <button
+              class="bg-white text-red-700 font-bold py-2 px-6 rounded-full shadow-lg hover:bg-gray-100 hover:text-red-700">
+           <a href="donorLogin.php">
+              Donate Now </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-------------------------------------------------------------------------------->
+    <div class="parent">
+      <div class="SearchBlood" ><a href="search_blood.php"><p> Blood Availability Search</p></a></div>
+      <div class="SearchCamp"><p><a  href="search_camp.php"> Blood Donation Camps Search</a></p></div>
+      <div class="DonerLogin" id="donate"><p><a href="donorLogin.php">Donor Registration/Login</a></p></div>
+      <div class="RegCamp"><p><a href="blood_camp.php">Register Voluntary Blood Camp</a></p></div>
+    </div>
+    <br /><br /><br />
+    <div class="learn" id="learn">
+      <h1 class="col">LEARN ABOUT DONATION</h1>
+      <p class="one">
+        Blood donation is the process of voluntarily giving blood, either whole
+        blood or specific components of blood, such as platelets or plasma, for
+        transfusion to another person. Blood donation is an essential aspect of
+        healthcare as it plays a vital role in saving millions of lives
+        worldwide.
+        The blood donation process typically involves several steps, including
+        registration, a medical screening, the actual donation process, and a
+        brief recovery period. The screening process ensures that the blood is
+        safe for transfusion and that the donor is healthy enough to donate.
+        After donation, the blood is tested for various infectious diseases
+        before it can be used for transfusion.
+      </p>
+      <br />
+      <table class="center">
+        <caption><b>Blood Type Compatibility Chart for Donors and Recipients</b></caption>
+        <thead>
+          <tr>
+            <th>Blood Type</th>
+            <th>Can Donate To</th>
+            <th>Can Receive From</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A+</td>
+            <td>A+, AB+</td>
+            <td>A+, A-, O+, O-</td>
+          </tr>
+          <tr>
+            <td>A-</td>
+            <td>A+, A-, AB+, AB-</td>
+            <td>A-, O-</td>
+          </tr>
+          <tr>
+            <td>B+</td>
+            <td>B+, AB+</td>
+            <td>B+, B-, O+, O-</td>
+          </tr>
+          <tr>
+            <td>B-</td>
+            <td>B+, B-, AB+, AB-</td>
+            <td>B-, O-</td>
+          </tr>
+          <tr>
+            <td>AB+</td>
+            <td>AB+</td>
+            <td>All Blood Types (AB+, AB-, A+, A-, B+, B-, O+, O-)</td>
+          </tr>
+          <tr>
+            <td>AB-</td>
+            <td>AB+, AB-</td>
+            <td>AB-, A-, B-, O-</td>
+          </tr>
+          <tr>
+            <td>O+</td>
+            <td>All Blood Types (O+, A+, B+, AB+)</td>
+            <td>O+, O-</td>
+          </tr>
+          <tr>
+            <td>O-</td>
+            <td>All Blood Types</td>
+            <td>O-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <ul class="footer-nav">
+        <li class="footer-nav-item">
+          <a href="index.html" class="footer-nav-link">Home</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="contact.php" class="footer-nav-link">About Us</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="donorLogin.php" class="footer-nav-link">Donate Blood</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

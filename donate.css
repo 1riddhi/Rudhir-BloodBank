@@ -1,0 +1,48 @@
+body{
+    background-image: url(donate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+}
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15rem;
+  }
+  
+
+  .RegCamp {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(245, 161, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
+    border-radius: 5%;
+    transition: all 0.3s ease 0s;
+  }
+  .RegCamp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  }
+
+
+  .DonerLogin {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(35, 209, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
+    border-radius: 5%;
+    transition: all 0.3s ease 0s;
+  }
+  .DonerLogin:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  }
+  
